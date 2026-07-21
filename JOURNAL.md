@@ -14,3 +14,10 @@ Some unit tests that assert logging output are failing because `structlog` event
 **Setup confirmation:** [ ] App runs locally at localhost:5173
 
 **Cohort ledger:** [ ] Issue added to cohort ledger
+
+**Checklist reasoning ("Is this right for me?"):**
+- I am comfortable reading Python test code and runtime logging; this issue is primarily a test/configuration fix (no large unfamiliar subsystems).
+- The change surface is small: adjust test logging capture or `core/logging.py` so `structlog` events route into the standard `logging` handlers that `pytest`'s `caplog` inspects.
+- The fix doesn't require external services or data; unit tests and local test runs should validate the change.
+- Therefore this is appropriate as a Tier 1 contribution for a first-time contributor.
+
