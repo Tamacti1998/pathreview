@@ -27,3 +27,17 @@ Some unit tests that assert logging output are failing because `structlog` event
 - The fix doesn't require external services or data; unit tests and local test runs should validate the change.
 - Therefore this is appropriate as a Tier 1 contribution for a first-time contributor.
 
+## Week 8 — Reproduction & solution planning
+
+**Reproduction commit link:** https://github.com/Tamacti1998/pathreview/commit/fa434ff
+
+**Reproduction summary:**
+I reproduced the issue by running the batch processor unit test locally and observed that the warning message was emitted to stdout while pytest's caplog fixture remained empty. This confirmed the logging issue is real and tied to the structlog configuration used during tests.
+
+**PLAN.md link:** https://github.com/Tamacti1998/pathreview/blob/test/159-structlog-caplog/PLAN.md
+
+**Walkthrough video (recommended):** N/A
+
+**Blockers or open questions:**
+None at this stage; the next step is to implement the logging fix and verify it with the relevant tests.
+
