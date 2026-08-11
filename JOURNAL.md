@@ -78,3 +78,33 @@ I verified the existing batch processor test suite in `tests/unit/test_batch_pro
 **Draft PR feedback received from:**
 No one reviewed
 
+## Week 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [ ] Yes  [x] No — still awaiting review
+
+**Summary of feedback:**
+No reviewer feedback has arrived yet. The PR is still pending review, so I have not received any comments or requested changes.
+
+**How you responded:**
+I am waiting for reviewer input before making any further updates. No code changes have been made in response yet.
+
+---
+
+### Reflection
+
+**What was harder than you expected?**
+Coordinating progress with the review timeline was harder than expected; even though the fix was implemented, I could not complete the last iteration without reviewer feedback.
+
+**What did you learn about working in a large codebase?**
+I learned that contribution progress often depends on others' review cycles, and that a clean, small change can still sit waiting for external feedback.
+
+**How did AI tools help — and where did they fall short?**
+AI tools helped me think through the logging issue and plan the fix, but they could not replace the actual review and validation from the project maintainers.
+
+**What would you do differently if you started over?**
+I would add an earlier note in the PR description to clarify the expected review path and proactively ask for review sooner.
+
+**What are you most proud of from this module?**
+I am most proud that I identified the failure mode clearly and implemented a targeted fix with minimal code changes, even while the final review is still pending.
